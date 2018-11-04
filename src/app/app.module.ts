@@ -3,9 +3,9 @@ import { NgModule, APP_INITIALIZER, Injector } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContentfulService } from './contentful.service';
-import { PreloadService, preloadServiceFactory } from './preload.service';
-import { NavigationService } from './navigation.service';
+import { ContentfulService } from './services/contentful.service';
+import { PreloadService, preloadServiceFactory } from './services/preload.service';
+import { NavigationService } from './services/navigation.service';
 import { PageComponent } from './page/page.component';
 
 @NgModule({

@@ -1,7 +1,7 @@
-import { Navigation } from "./models/navigation/navigation.model";
-import { NavigationNode } from "./models/navigation/navigationNode.model";
+import { Navigation } from "../models/navigation/navigation.model";
+import { NavigationNode } from "../models/navigation/navigationNode.model";
 import { Injectable } from "@angular/core";
-import { Website } from "./models/website.model";
+import { Website } from "../models/website.model";
 
 @Injectable()
 export class NavigationService {

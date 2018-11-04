@@ -1,8 +1,8 @@
 import { Injectable, Injector } from "@angular/core";
 import { ContentfulService } from "./contentful.service";
-import { Website } from "./models/website.model";
+import { Website } from "../models/website.model";
 import { NavigationService } from "./navigation.service";
-import { PageComponent } from "./page/page.component";
+import { PageComponent } from "../page/page.component";
 import { Route, Router } from "@angular/router";
 
 @Injectable()

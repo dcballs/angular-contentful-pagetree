@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Navigation } from './models/navigation/navigation.model';
-import { ContentfulService } from './contentful.service';
-import { NavigationService } from './navigation.service';
+import { ContentfulService } from './services/contentful.service';
+import { NavigationService } from './services/navigation.service';
 
 @Component({
   selector: 'app-root',

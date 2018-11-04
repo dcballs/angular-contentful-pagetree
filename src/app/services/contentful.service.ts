@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { createClient, Space, ContentfulClientApi } from 'contentful';
-import { Website } from './models/website.model';
-import { Page } from './models/page.model';
+import { Website } from '../models/website.model';
+import { Page } from '../models/page.model';
 
 const DEFAULT_CONFIG = {
   credentials: {

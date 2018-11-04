@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ContentfulService } from '../contentful.service';
+import { ContentfulService } from '../services/contentful.service';
 
 @Component({
   selector: 'app-page',
