@@ -12,6 +12,7 @@ Some time ago I wanted to create a website based on Angular and Contentful. Ther
 
 - Angular (v7)
 - Contentful Account (_doesn't matter if free or paid_)
+- Contentful CLI
 
 ## Prerequisites
 
