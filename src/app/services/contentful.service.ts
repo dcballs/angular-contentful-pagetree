@@ -33,21 +33,12 @@ export class ContentfulService {
       this.config = DEFAULT_CONFIG.credentials;
     }
 
-    this.titleHandlers = [];
     this._createClient();
     this.getSpace();
   }
 
-  onTitleChange(fn): void {
-    this.titleHandlers.push(fn)
-  }
-
   getSpace(): Promise<Space> {
-    return this.cdaClient.getSpace()
-      .then(space => {
-        this.titleHandlers.forEach(handler => handler(space.name))
-        return space;
-      })
+    return this.cdaClient.getSpace();
   }
 
   getWebsite(): Promise<Website> {

@@ -9,7 +9,7 @@ import { NavigationService } from './services/navigation.service';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  name = 'angular-contentful-pagetree-ots';
+  spaceName = 'Angular Contentful Page Tree';
   websiteName: string;
   navigation: Navigation;
 
@@ -21,7 +21,7 @@ export class AppComponent {
   ngOnInit() {
     this.navigation = this.navigationService.navigation;
     this.contentfulService.getSpace().then(space => {
-      this.name = space.name
+      this.spaceName = space.name
       this.websiteName = this.navigationService.website.websiteName;
     });
   }
