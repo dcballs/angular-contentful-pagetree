@@ -1,0 +1,360 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g4xluudzmbkx"
+          }
+        },
+        "id": "website",
+        "type": "ContentType",
+        "createdAt": "2018-10-30T19:22:09.324Z",
+        "updatedAt": "2018-10-30T19:40:00.818Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7J4vyMOJlpkI0UYIfk4HqV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7J4vyMOJlpkI0UYIfk4HqV"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7J4vyMOJlpkI0UYIfk4HqV"
+          }
+        },
+        "publishedVersion": 3,
+        "firstPublishedAt": "2018-10-30T19:22:09.820Z",
+        "publishedAt": "2018-10-30T19:40:00.818Z"
+      },
+      "displayField": "websiteName",
+      "name": "Website",
+      "description": "Configures a website",
+      "fields": [
+        {
+          "id": "websiteName",
+          "name": "Website Name",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pages",
+          "name": "Pages",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "websitePage"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g4xluudzmbkx"
+          }
+        },
+        "id": "websitePage",
+        "type": "ContentType",
+        "createdAt": "2018-10-30T19:32:14.874Z",
+        "updatedAt": "2018-10-30T19:32:15.260Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7J4vyMOJlpkI0UYIfk4HqV"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7J4vyMOJlpkI0UYIfk4HqV"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7J4vyMOJlpkI0UYIfk4HqV"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-10-30T19:32:15.260Z",
+        "publishedAt": "2018-10-30T19:32:15.260Z"
+      },
+      "displayField": "name",
+      "name": "Website Page",
+      "description": "Configures a website page",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "navigationTitle",
+          "name": "Navigation Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "route",
+          "name": "Route",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "g4xluudzmbkx",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2018-10-30T19:22:09.954Z",
+        "createdBy": {
+          "sys": {
+            "id": "7J4vyMOJlpkI0UYIfk4HqV",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-10-30T19:40:01.492Z",
+        "updatedBy": {
+          "sys": {
+            "id": "7J4vyMOJlpkI0UYIfk4HqV",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "website",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "websiteName",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "pages",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "g4xluudzmbkx",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-10-30T19:32:15.758Z",
+        "createdBy": {
+          "sys": {
+            "id": "7J4vyMOJlpkI0UYIfk4HqV",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-10-30T19:32:16.374Z",
+        "updatedBy": {
+          "sys": {
+            "id": "7J4vyMOJlpkI0UYIfk4HqV",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "websitePage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "navigationTitle",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "route",
+          "widgetId": "singleLine"
+        }
+      ]
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "7nNxQs7JulhwZUInbUzXj8",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g4xluudzmbkx"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7J4vyMOJlpkI0UYIfk4HqV"
+          }
+        },
+        "createdAt": "2018-10-30T18:38:41Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7J4vyMOJlpkI0UYIfk4HqV"
+          }
+        },
+        "updatedAt": "2018-10-30T18:38:41Z"
+      }
+    }
+  ]
+}
